@@ -11,19 +11,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Martel&family=Nunito+Sans&family=Splash&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/7ddcef2803.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
     <div class="grid-container">
-        <nav class="box1">
-            <a href="#nosotros">nosotros</a>
-            <a href="#cervezas">cervezas</a>
-            <a href="#y_mas">y mas</a>
-            <a id="home" href="#logo">Alta Pinta</a>
-            <a href="#galeria">galeria</a>
-            <a href="#locales">locales</a>
-            <a href="#reservas">reservas</a>
-        </nav>
+        <header class ="box1">
+            <nav>
+                <div class="navheader">
+                    <div><a id="logo" href="#home">Alta Pinta</a></div>   
+                </div>
+                <button id="abrir" class="abrir-menu"><i class="fa-solid fa-bars"></i></button>
+                <ul id="nav">
+                    <button id="cerrar" class="cerrar-menu"><i class="fa-solid fa-xmark"></i></button>
+                    <li><a href="#cervezas">cervezas</a></li>
+                    <li><a href="#picar">para picar</a></li>
+                    <li><a href="#locales">locales</a></li>
+                    <li><a href="#nosotros">quienes somos</a></li>
+                    <li><a href="#galeria">galeria</a></li>
+                    <li><a href="#contacto">contacto</a></li>
+                </ul>
+            </nav>
+        </header>
         <div class="box2">
             <div id="nosotros">
                 <h1>Conoce Alta Pinta</h1>
@@ -143,6 +151,7 @@
 
 
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
