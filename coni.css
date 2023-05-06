@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    background-color: #110903;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.nav{
+    width: 100%;
+    height: 200px;
+}
+
+.navheader{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.abrir-menu, .cerrar-menu{
+    display: none;
+}
+
+.navheader div a{
+    font-family: Splash, cursive;
+    color: goldenrod; 
+    text-align: center;
+    text-decoration: none;
+    margin: auto;
+    font-size: 40px;
+}
+
+ul{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
+ul li{
+    list-style: none;
+    margin: 20px auto;
+}
+
+ul li a{
+    color: goldenrod;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+ul li a:hover{
+    text-decoration: underline;
+}
+
+header h2 {
+    color: goldenrod;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 300;
+    margin: 10px auto;
+}
+
+header p {
+    color: goldenrod;
+    text-align: center;
+    margin: 20px auto;
+}
+
+/* nueva seccion */
+@keyframes carrusel{
+    0% {left: 0%}
+    20% {left: 0%}
+    25% {left: -100%}
+    45% {left: -100%}
+    50% {left: -200%}
+    70% {left: -200%}
+    75% {left: -100%}
+    95% {left: -100%}
+    100% {left: 0%}
+}
+
+/* carrusel */
+
+#slider{
+    max-width: 100%;
+    height: 700px;
+    overflow: hidden;
+}
+
+#slider figure{
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    width: 300%;
+    animation: 30s carrusel infinite;
+    margin: 0;
+    font-size: 0;
+    text-align: left;
+    left: 0;
+}
+
+#slider figure img{
+    width: 100%;
+    object-fit: cover;
+}
+
+/* nueva seccion */
+#seccion2{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #110903;
+}
+
+#seccion2 .elemento{
+    padding: 70px 0;
+    color: goldenrod;
+}
+
+#seccion2 .fotos{
+    max-width: 600px;
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 10px 10px; 
+    grid-template-areas: 
+        ". ."
+        ". ."; 
+}
+
+#seccion2 .fotos .imagen{
+    overflow: hidden;
+}
+
+#seccion2 .fotos img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 3px;
+    transition: transform .6s;
+}
+
+#seccion2 .fotos img:hover{
+    transform: scale(1.1);
+}
+
+
+
+#seccion2 .elemento h3{
+    text-align: center;
+    font-size: 25px;
+    padding: 10px 0;
+} 
+
+#seccion2 .elemento p{
+    text-align: center;
+    padding: 20px 0;
+}
+
+#seccion2 .elemento iframe{
+    max-width: 350px;
+    max-height: 300px;
+    border-radius: 3px;
+}
+
+#seccion3{
+    width: 100%;
+    background-color: #110903;
+    margin: 10px 0;
+    padding: 50px 0;
+}
+
+#seccion3 h4{
+    font-size: 25px;
+    color: goldenrod;
+    text-align: center;
+    padding: 50px 0;
+}
+
+#seccion3 form{
+    width: 50%;
+    height: 100%;
+    margin: 20px auto;
+}
+
+#seccion3 form .campo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#seccion3 form .campo input{
+    width: 500px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid goldenrod;
+    margin: 15px 0;
+    outline: none;
+    color: gray;
+}
+
+/* #seccion3 form .campo input:active{
+    outline: none;
+} */
+
+#seccion3 form .campo button{
+    font-size: 15px;
+    font-weight: 600;
+    margin: 20px 0;
+    background-color: goldenrod;
+    padding: 10px 20px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+
+footer{
+    color: #110903;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: goldenrod;
+}
+
+footer .footer-left .logo{
+    width: 90%;
+    margin: auto;
+}
+
+footer .footer-left .logo img{
+    width: 100%;
+}
+
+footer .footer-left .contacto{
+    width: 100%;
+    display: flex;
+    list-style: none;
+    margin: 10px auto;
+}
+
+footer .footer-left p{
+    font-weight: 600;
+    text-align: center;
+}
+
+footer .footer-left .contacto li:last-child{
+    border-left: 1px solid #110903;
+}
+
+footer .footer-left .contacto li a{
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    color: #110903;
+    padding: 0 10px;
+}
+
+.footer-left, .footer-right{
+    margin: 50px 0;
+}
+
+footer .footer-right p{
+    margin-top: 40px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+footer .footer-right .redes{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 20px auto;
+}
+
+footer .footer-right .redes li{
+    margin: 0 auto;
+}
+
+footer .footer-right .redes li a{
+    display: inline-block;
+	width: 45px;
+	height: 45px;
+    background-color: #110903;
+    border-radius: 2px;
+	font-size: 25px;
+    color: goldenrod;
+	text-align: center;
+	line-height: 45px;
+	margin-right: 3px;
+	margin-bottom: 5px;
+    transition: ease all .3s;
+}
+
+footer .footer-right .redes li a:hover{
+    color:#ffffff;
+}
+
+@media screen and (max-width: 800px) {
+    nav{
+        width:80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navheader{
+        display: inline-block;
+    }
+
+    .abrir-menu, .cerrar-menu{
+        display: block;
+        background-color: transparent;
+        border: 0;
+        color: goldenrod;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    .abrir-menu{
+        margin:auto 0 auto 110px;
+    }
+    nav ul{
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        align-items: start;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #1c1c1c;
+        padding: 2rem;
+        box-shadow: 0 0 100vmax rgba(0,0,0,0.5);
+        z-index: 1;
+    }
+    .visible{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    nav ul li{
+        margin: 0;
+    }
+
+    #slider{
+        width: 100%;
+        height: 300px;
+    }
+}    
