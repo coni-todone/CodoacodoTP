@@ -110,6 +110,83 @@ header p {
     width: 100%;
     object-fit: cover;
 }
+/* sección cerveza */
+
+#cerveza {
+    height: 250px;
+    background: goldenrod;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 100px;
+    /* grid-template-rows: 100px 100px; */
+    /* https://www.w3schools.com/css/css_grid_container.asp */
+    align-content:flex-start;  /* o center */
+}
+.h2 {
+    background-color: #110903;
+    text-align: center;
+    color:  goldenrod;
+
+}
+.card {
+    width: 200px;
+    height: 300px;
+    border: 1px solid wheat;
+    border-radius: 10px;
+    box-shadow: 0 0 10px;
+    margin: 15px;
+
+}
+
+.card:hover{
+   transform: translateY(-3%);
+}
+
+.card p, h3 {
+    color: goldenrod;
+text-align: center;
+}
+
+/*Seccion picada*/
+
+#Picada {
+    background-color:  #110903 ;
+}
+.card1 { 
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px;
+    margin: 15px;
+    display:flex;
+    padding: 5px;
+}
+
+.box7 h2 {
+    text-align: center;
+    color: goldenrod;
+}
+.card1 h2 {
+    text-align: center;
+    font-size:large;
+
+}
+
+
+.textopicada {
+    color: goldenrod;
+    padding: 15px;
+}
+
+
+.box5 {
+    background-color: #110903;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+ 
+      }
 
 /* nueva seccion */
 #seccion2{
