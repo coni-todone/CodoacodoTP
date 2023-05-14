@@ -5,7 +5,9 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+
 }
+
 
 header{
     background-color: #110903;
@@ -117,11 +119,7 @@ header p {
     background: goldenrod;
     display: grid;
     gap: 10px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100px 100px;
-    /* grid-template-rows: 100px 100px; */
-    /* https://www.w3schools.com/css/css_grid_container.asp */
-    align-content:flex-start;  /* o center */
+
 }
 .h2 {
     background-color: #110903;
@@ -147,18 +145,40 @@ header p {
     color: goldenrod;
 text-align: center;
 }
+.box5 {
+    background-color: #110903;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+ 
+      }
 
 /*Seccion picada*/
 
 #Picada {
     background-color:  #110903 ;
+    text-align: center;
+    color: goldenrod;
+    
+}
+
+.box7 {
+    background-color: #110903;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
 }
 .card1 { 
+    width: 500px;
+    height: 550px;
     border: 1px solid white;
     border-radius: 10px;
     box-shadow: 0 0 10px;
     margin: 15px;
-    display:flex;
     padding: 5px;
 }
 
@@ -172,21 +192,16 @@ text-align: center;
 
 }
 
-
+.card1 p {
+    text-align: justify;
+}
 .textopicada {
     color: goldenrod;
     padding: 15px;
 }
 
 
-.box5 {
-    background-color: #110903;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap: 10px;
- 
-      }
+
 
 /* nueva seccion */
 #seccion2{
