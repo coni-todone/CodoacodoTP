@@ -8,72 +8,465 @@
 
 }
 
-/*
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}*/
-
-.grid-container {
-    display: grid;
-    grid-template-columns: 50% 50%;    
-    
-}
-.box1 {
-    grid-column: 1 / 3;
-    background-color: rgb(21, 21, 22);
+header {
+    background-color: #110903;
     text-align: center;
     justify-content: space-around;
-    }
-.nav{
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+}
+
+.nav {
     width: 100%;
     height: 200px;
 }
 
-.navheader{
+.navheader {
     display: flex;
     justify-content: center;
     width: 100%;
 }
 
-.abrir-menu, .cerrar-menu{
+.abrir-menu,
+.cerrar-menu {
     display: none;
 }
 
+.navheader #logo {
+    font-family: 'Splash', cursive;
+    color: goldenrod;
+    text-align: center;
+    text-decoration: none;
+    margin: auto;
+    font-size: 40px;
+}
+
+ul {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
+ul li {
+    list-style: none;
+    margin: 20px auto;
+}
+
+ul li a {
+    color: goldenrod;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+
+/* nueva seccion */
+/*@keyframes carrusel{
+    0% {left: 0%}
+    20% {left: 0%}
+    25% {left: -100%}
+    45% {left: -100%}
+    50% {left: -200%}
+    70% {left: -200%}
+    75% {left: -100%}
+    95% {left: -100%}
+    100% {left: 0%}
+}*/
+
+/* nosotros*/
+
+.one {
+    display: flex;
+    color: #110903;
+    height: 100vh;
+    background-image: url(./img/cerveceria640x429.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 70px 30px ;
+    color: goldenrod;
+       
+}
+.one div {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #110903;
+    padding: 20px;
+    width: 45vw;
+    height: 95vh;
+    opacity: 0.7;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+.one h1 {
+    text-align:left;
+    font-family: 'Martel',serif;
+    font-size: 3em;
+    padding: 10px;
+    background-color: #110903;
+}
+.one h5 {
+    text-align: left;
+    font-family: 'Martel',serif;
+    font-size: 2em;
+    padding: 10px;
+    
+}
+.one p {
+    padding: 10px;
+    font-weight: 100em;
+    
+}
+.one a {
+    text-decoration:none;
+    color:goldenrod;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid goldenrod;
+    border-radius: 7px;
+}
+
+/* sección cerveza */
+
+#cerveza {
+    height: 250px;
+    background: goldenrod;
+    display: grid;
+    gap: 10px;
+
+}
+
+.tarjetas {
+    background-color: #110903;
+    text-align: center;
+    font-family: 'Martel', serif;
+    color: goldenrod;
+
+}
+
+.tarjetas h2 {
+    text-align: center;
+    font-family: 'Martel', serif;
+    font-size: 2em;
+    padding: 30px;
+}
+
+.card {
+    width: 200px;
+    height: 300px;
+    border: 1px solid wheat;
+    border-radius: 10px;
+    box-shadow: 0 0 10px;
+    margin: 15px;
+
+}
+
+.card:hover {
+    transform: translateY(-3%);
+}
+.card img {
+    width: 180px;
+    object-fit:cover;
+    object-position: center;
+    padding: 10px;
+}
+.card h3 {
+    color: goldenrod;
+    text-align: center;
+    padding: 10px;
+}
+
+.card p {
+    color: goldenrod;
+    text-align: center;
+    
+}
+
+.box5 {
+    background-color: #110903;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+
+}
+
+/*Seccion picada*/
+
+#picadas {
+    background-color: #110903;
+    text-align: center;
+    color: goldenrod;
+
+}
+#picadas h2 {
+text-align: center;
+font-family: 'Martel', serif;
+font-size: 2em;
+padding: 30px;
+}
+
+.box7 {
+    background-color: #110903;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+}
+
+.card1 {
+    width: 500px;
+    height: 550px;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px;
+    margin: 15px;
+    padding: 5px;
+}
+.card1 img {
+    object-fit: cover;
+    object-position: center;
+    padding: 10px;
+}
+
+.card1 h3 {
+    text-align: center;
+    font-size: large;
+
+}
+
+.card1 p {
+    text-align: justify;
+}
+
+.textopicada {
+    color: goldenrod;
+    padding: 15px;
+}
+
+/* nueva seccion */
+.sucursales {
+    text-align: center;
+    padding: 50px;
+    height: 110vh;
+    background-color: #110903;
+}
+
+.sucursales h3 {
+    padding: 20px;
+    font-family: 'Martel', serif;
+    font-size: 2em;
+    color: goldenrod;
+}
+
+.sucursales p {
+    padding: 20px;
+    color: goldenrod;
+}
+
+.sucursales div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.sucursales div iframe {
+    border: 2px solid goldenrod;
+    border-radius: 10px;
+    opacity: 0.8;
+    background-color: #110903;
+    background-blend-mode: darken;
+    width: 500px;
+    height: 400px;
+    
+}
+
+#galeria {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: #110903;
+
+}
+#galeria img{
+   
+    width: 22vw;
+    border-radius: 10px;
+    padding: 5px;
+    
+}
+
+#seccion3 {
+    width: 100%;
+    background-color: #110903;
+    margin: 10px 0;
+    padding: 50px 0;
+}
+
+#seccion3 h4 {
+    font-size: 25px;
+    color: goldenrod;
+    text-align: center;
+    padding: 50px 0;
+}
+
+#seccion3 form {
+    width: 50%;
+    height: 100%;
+    margin: 20px auto;
+}
+
+#seccion3 form .campo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#seccion3 form .campo input {
+    width: 500px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid goldenrod;
+    margin: 15px 0;
+    outline: none;
+    color: gray;
+}
+
+/* #seccion3 form .campo input:active{
+    outline: none;
+} */
+
+#seccion3 form .campo button {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 20px 0;
+    background-color: goldenrod;
+    padding: 10px 20px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    color: #110903;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: goldenrod;
+}
+
+footer .footer-left .logo {
+    width: 90%;
+    margin: auto;
+}
+
+footer .footer-left .logo img {
+    width: 100%;
+}
+
+footer .footer-left .contacto {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    margin: 10px auto;
+}
+
+footer .footer-left p {
+    font-weight: 600;
+    text-align: center;
+}
+
+footer .footer-left .contacto li:last-child {
+    border-left: 1px solid #110903;
+}
+
+footer .footer-left .contacto li a {
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    color: #110903;
+    padding: 0 10px;
+}
+
+.footer-left,
+.footer-right {
+    margin: 50px 0;
+}
+
+footer .footer-right p {
+    margin-top: 40px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+footer .footer-right .redes {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 20px auto;
+}
+
+footer .footer-right .redes li {
+    margin: 0 auto;
+}
+
+footer .footer-right .redes li a {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background-color: #110903;
+    border-radius: 2px;
+    font-size: 25px;
+    color: goldenrod;
+    text-align: center;
+    line-height: 45px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+    transition: ease all .3s;
+}
+
+footer .footer-right .redes li a:hover {
+    color: #ffffff;
+}
+
 @media screen and (max-width: 800px) {
-    nav{
-        width:80%;
-        margin: auto;
+    nav {
+        width: 80%;
+        margin: 0 auto;
         display: flex;
         justify-content: space-between;
     }
 
-    .navheader{
+    .navheader {
         display: inline-block;
     }
 
-    .abrir-menu, .cerrar-menu{
+    .abrir-menu,
+    .cerrar-menu {
         display: block;
         background-color: transparent;
         border: 0;
-        color: white;
-        font-size: 20px;
+        color: goldenrod;
+        font-size: 25px;
         cursor: pointer;
     }
 
-    .abrir-menu{
-        margin:auto 0 auto 110px;
-        padding-bottom: 10px;
+    .abrir-menu {
+        margin: auto 0 auto 110px;
     }
-    nav ul{
+
+    nav ul {
         opacity: 0;
         visibility: hidden;
         display: flex;
@@ -85,132 +478,17 @@
         bottom: 0;
         background-color: #1c1c1c;
         padding: 2rem;
-        box-shadow: 0 0 100vmax rgba(0,0,0,0.5);
+        box-shadow: 0 0 100vmax rgba(0, 0, 0, 0.5);
         z-index: 1;
     }
-    .visible{
+
+    .visible {
         opacity: 1;
         visibility: visible;
     }
 
-    nav ul li{
+    nav ul li {
         margin: 0;
     }
-}
-.navheader div a{
-    font-family: Splash, cursive;
-    color: #ddd; 
-    text-align: center;
-    text-decoration: none;
-    margin: auto;
-    font-size: 40px;
-}
 
-ul{
-    width: 80%;
-    display: flex;
-    justify-content: space-around;
-    margin: auto;
-}
-
-ul li{
-    list-style: none;
-    margin: 20px auto;
-}
-
-ul li a{
-    color: #ddd;
-    font-size: 20px;
-    text-decoration: none;
-}
-
-ul li a:hover{
-    text-decoration: underline;
-}
-
-header h2 {
-    color: #ddd;
-    text-align: center;
-    font-size: 1.5em;
-    font-weight: 300;
-    margin: 10px auto;
-}
-
-header p {
-    color: #ddd;
-    text-align: center;
-    margin: 20px auto;
-}
-.box2 {
-    grid-column: 1 / 2;
-    background-color: goldenrod;
-    height: 65vh;
-}
-.box2>div {
-    padding: 30px;
-    display: inline-block;
-    
-}
-.box2>div>h1 {
-    font-family: 'Martel', serif;
-    font-size: 2.5em;
-    padding:10px;
-    text-align: left;
-}
-.box2>div>h2 {
-    font-family: 'Martel', serif;
-    font-size: 1.5em;
-    padding:10px;
-    text-align: left;
-}
-.box2 div p {    
-    text-align: left; 
-    padding-bottom:30px;
-    
-}
-.box2 a {
-    text-decoration:none;
-    text-align: center;
-    color: black;
-    padding: 10px;
-    border: 1px solid black;
-    border-radius: 7px;
-    margin:20px;
-}
-
-
-.box3 {
-    background-image: url(./img/cervezas505x450.jpg);
-    background-position: center;
-    grid-column: 2 / 3;
-    object-fit: cover;
-    overflow: hidden;
-
-}
-.box4 {
-    grid-column: 1 / 2;
-}
-.box5 {
-    grid-column: 1 / 2;
-}
-.box6 {
-    grid-column: 1 / 2;
-}
-.box7 {
-    grid-column: 2 / 3;
-}
-.box8 {
-    grid-column: 1 / 2;
-}
-.box9 {
-    grid-column: 2 / 3;
-}
-.box10 {
-    grid-column: 1 / 3;
-}
-.box11 {
-    grid-column: 1 / 3;
-}
-.box12 {
-    grid-column: 1 / 3;
 }
